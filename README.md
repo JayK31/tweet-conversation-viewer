@@ -1,4 +1,7 @@
 ###Tweet Convo Viewer
 
+###Tweet Convo Viewer on Heroku
+[Heroku](http://polar-refuge-3296.herokuapp.com/)
+
 ###Pivotal Tracker
-https://www.pivotaltracker.com/s/projects/1078414
+[Pivotal](https://www.pivotaltracker.com/s/projects/1078414)
