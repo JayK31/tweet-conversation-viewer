@@ -1,14 +1,25 @@
+// m = margins, set height and width by subtracting from m(left, top, right, bottom)
+// not sure what i is here
 var m = [20, 120, 20, 120],
     w = 1280 - m[1] - m[3],
     h = 800 - m[0] - m[2],
     i = 0,
     root;
 
+// creates new tree layout with default settings except size
+// the default sort order is null; the default children accessor assumes each input data is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings;
+// https://github.com/mbostock/d3/wiki/Tree-Layout
 var tree = d3.layout.tree()
     .size([h, w]);
 
+// Constructs a new diagonal generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors
+// the projection converts the starting or ending point returned by the source and target accessors, returning a two-element array of numbers. The default accessor assumes that the input point is an object with x and y attributes
+// https://github.com/mbostock/d3/wiki/SVG-Shapes
+// https://github.com/mbostock/d3/wiki/SVG-Shapes#diagonal_projection
 var diagonal = d3.svg.diagonal()
-    .projection(function(d) { return [d.y, d.x]; });
+    // .projection(function(d) { return [d.y, d.x]; });
+    // changing the projection to d.x, d.y to convert to vertical tree
+    .projection(function(d) {return [d.x, d.y]; });
 
 var vis = d3.select("#body").append("svg:svg")
     .attr("width", w + m[1] + m[3])
@@ -18,8 +29,12 @@ var vis = d3.select("#body").append("svg:svg")
 
 d3.json("data.json", function(json) {
   root = json;
+  // change x0,y0 values
+  // not sure what this is doing, has no effect on orientation
   root.x0 = h / 2;
   root.y0 = 0;
+  // root.x0 = 0;
+  // root.y0 = w / 2;
 
   function toggleAll(d) {
     if (d.children) {
@@ -54,8 +69,11 @@ function update(source) {
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .attr("transform", function(d) { return "translate(" + source.x0 + "," + source.y0 + ")"; })
       .on("click", function(d) { toggle(d); update(d); });
+      // changing the source from y,x to x,y appends new nodes from top to bottom instead of left to right
+      // setting parent node
+      // .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
@@ -71,7 +89,9 @@ function update(source) {
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
       .duration(duration)
-      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });  
+      // above, switching the translate for new nodes
+      // .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
       .attr("r", 4.5)
@@ -83,8 +103,10 @@ function update(source) {
   // Transition exiting nodes to the parent's new position.
   var nodeExit = node.exit().transition()
       .duration(duration)
-      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .attr("transform", function(d) { return "translate(" + source.x + "," + source.y + ")"; })
       .remove();
+      // now switching x,y for exiting nodes
+      // .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
 
   nodeExit.select("circle")
       .attr("r", 1e-6);
@@ -93,6 +115,8 @@ function update(source) {
       .style("fill-opacity", 1e-6);
 
   // Update the links…
+  // #tree.links returns array of objects representing links from parent 
+  // to child for each node
   var link = vis.selectAll("path.link")
       .data(tree.links(nodes), function(d) { return d.target.id; });
 
