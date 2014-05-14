@@ -13,11 +13,13 @@ class User < ActiveRecord::Base
       if registered_user
         return registered_user
       else
-
+        binding.pry
         user = User.create(name:auth.extra.raw_info.name,
                             provider:auth.provider,
                             uid:auth.uid,
                             email:auth.uid+"@twitter.com",
+                            token: auth.credentials.token, 
+                            secret: auth.credentials.secret,
                             password:Devise.friendly_token[0,20],
                           )
       end
