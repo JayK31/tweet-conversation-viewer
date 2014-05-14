@@ -48,7 +48,8 @@ d3.json("data.json", function(json) {
 
   // Initialize the display to show a few nodes.
   root.children.forEach(toggleAll);
-  // toggle(root.children[1]);
+
+  toggle(root)
   // toggle(root.children[1].children[2]);
   // toggle(root.children[9]);
   // toggle(root.children[9].children[0]);
@@ -73,7 +74,7 @@ function update(source) {
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + source.x0 + "," + source.y0 + ")"; })
+      .attr("transform", function(d) { return "translate(" + source.x0 + "," + (source.y0+15) + ")"; })
       .on("click", function(d) { toggle(d); update(d); });
       // changing the source from y,x to x,y appends new nodes from top to bottom instead of left to right
       // setting parent node
@@ -90,6 +91,10 @@ function update(source) {
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6)
+      .on("mouseover", function(d) {
+        alert(d.name)
+        
+      })
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
