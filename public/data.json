@@ -1,28 +1,60 @@
 {
+ "id": 464468014386409474,
  "name": "Jake Porter",
+ "image": "http://pbs.twimg.com/profile_images/465652254100291584/zer_bMzw_normal.png",
+ "text": "75k retweets by June 1st and my entire class doesn't have to take the Chemistry final. Please! http://t.co/zw0pLBjiXa",
  "children": [
   {
+   "id": 464482130228412416,
    "name": "Ahmed",
+   "image": "http://pbs.twimg.com/profile_images/462223642039156736/HVbOGLUG_normal.jpeg",
+   "text": "@jacobporter18 how about 75k retweets and you finally get laid?",
    "children": [
     {
-     "name": "Lucas",
+     "id": 464517549397671936,
+     "name": "Lucas Barth",
+     "image": "http://pbs.twimg.com/profile_images/451153514786717696/uYpOx-m5_normal.jpeg",
+     "text": "@pass_completion @jacobporter18 lol dude good one!",
      "children": [
       {
-        "name": "Brando", 
+        "id": 465290504024756224,
+        "name": "Brando Tomash",
+        "image": "http://pbs.twimg.com/profile_images/455452169710235650/eLWyh6uN_normal.jpeg",
+        "text": "@Lucas_B34 @pass_completion @jacobporter18 hope you guys realize you have do the final anyways", 
         "children": [
-        {"name": "Ahmed"}
-      ]}
+        {
+          "id": 465439197936246784,
+          "name": "Ahmed",
+          "image": "http://pbs.twimg.com/profile_images/462223642039156736/HVbOGLUG_normal.jpeg",
+          "text": "@branden_5 @Lucas_B34 @jacobporter18 yep this is just a stunt for fame"
+        }
+       ]
+      }
      ]
     },
     {
-      "name": "Darcy",
+      "id": 464523040936951808,
+      "name": "Darcy, Liam Richard",
+      "image": "http://pbs.twimg.com/profile_images/458969130310578176/tbntngkv_normal.jpeg",
+      "text": "@pass_completion @jacobporter18 75 k retweets and you shut the fuck up Ahmed",
       "children": [
       {
+        "id": 464523217311657984,
         "name": "Ahmed",
-        "children": [{
-          "name": "Brian",
-          "children": [{
-            "name": "Ahmed"
+        "image": "http://pbs.twimg.com/profile_images/462223642039156736/HVbOGLUG_normal.jpeg",
+        "text": "@liamdarcy24 @jacobporter18 deal",
+        "children": [
+        {
+          "id": 465677430729244672,
+          "name": "Brian Farrell",
+          "image": "http://pbs.twimg.com/profile_images/459402369122725888/8zGPBG_s_normal.jpeg",
+          "text": "@pass_completion @liamdarcy24 @jacobporter18 looks like Ahmed loses",
+          "children": [
+          {
+            "id": 465703937006243840,
+            "name": "Ahmed",
+            "image": "http://pbs.twimg.com/profile_images/462223642039156736/HVbOGLUG_normal.jpeg",
+            "text": "@bfarrell10 @liamdarcy24 @jacobporter18 haha fair play, you got the fame"
           }]
         }]
       }]
@@ -30,10 +62,16 @@
    ]
   },
   {
+    "id": 464471987302047744,
    "name": "Cal",
+   "image": "http://pbs.twimg.com/profile_images/459435339317116928/QN_XDfNi_normal.jpeg",
+   "text": "why is everybody doing this so gay\"@jacobporter18  http://t.co/jxWKW87we5\"",
    "children": [
     {
-     "name": "Vanilla"
+      "id": 464522518884540416,
+     "name": "Vanilla Crunch",
+     "image": "http://pbs.twimg.com/profile_images/441754053152747520/QCXGqt2T_normal.jpeg",
+     "text": "@cal_mitchell @jacobporter18 wait i'm confused.  what do gay people have to do with this?"
     }
    ]
   }
