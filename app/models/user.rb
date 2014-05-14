@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
       if registered_user
         return registered_user
       else
-        binding.pry
+        # binding.pry
         user = User.create(name:auth.extra.raw_info.name,
                             provider:auth.provider,
                             uid:auth.uid,
