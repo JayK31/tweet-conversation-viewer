@@ -2,15 +2,17 @@
 // not sure what i is here
 var m = [20, 120, 20, 120],
     w = 1280 - m[1] - m[3],
-    h = 800 - m[0] - m[2],
+    h = 1280 - m[0] - m[2],
     i = 0,
+    // add padding to offset increasing circle r 
+    padding = 40,
     root;
 
 // creates new tree layout with default settings except size
 // the default sort order is null; the default children accessor assumes each input data is an object with a children array; the default separation function uses one node width for siblings, and two node widths for non-siblings;
 // https://github.com/mbostock/d3/wiki/Tree-Layout
 var tree = d3.layout.tree()
-    .size([h, w]);
+    .size([w, h]);
 
 // Constructs a new diagonal generator with the default accessor functions (that assume the input data is an object with named attributes matching the accessors
 // the projection converts the starting or ending point returned by the source and target accessors, returning a two-element array of numbers. The default accessor assumes that the input point is an object with x and y attributes
@@ -25,16 +27,17 @@ var vis = d3.select("#body").append("svg:svg")
     .attr("width", w + m[1] + m[3])
     .attr("height", h + m[0] + m[2])
   .append("svg:g")
+      // translating svg (120, 20) 
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 d3.json("data.json", function(json) {
   root = json;
   // change x0,y0 values
   // not sure what this is doing, has no effect on orientation
-  root.x0 = h / 2;
-  root.y0 = 0;
-  // root.x0 = 0;
-  // root.y0 = w / 2;
+  // root.x0 = h / 2;
+  // root.y0 = 0;
+  root.x0 = 0;
+  root.y0 = w / 2;
 
   function toggleAll(d) {
     if (d.children) {
@@ -60,6 +63,7 @@ function update(source) {
   var nodes = tree.nodes(root).reverse();
 
   // Normalize for fixed-depth.
+  // depth of each node
   nodes.forEach(function(d) { d.y = d.depth * 180; });
 
   // Update the nodes…
@@ -80,21 +84,23 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("svg:text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      // changed x position of to -45,45 to move text out of circles
+      .attr("x", function(d) { return d.children || d._children ? -45 : 45; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
-      .style("fill-opacity", 1e-6);
+      .style("fill-opacity", 1e-6)
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
       .duration(duration)
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });  
-      // above, switching the translate for new nodes
+      // add padding so first node isnt off the svg
+      .attr("transform", function(d) { return "translate(" + d.x + "," + (d.y+padding) + ")"; });  
+      // above, switching the translate for node placement on svg
       // .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-      .attr("r", 4.5)
+      .attr("r", 40)
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
@@ -118,13 +124,16 @@ function update(source) {
   // #tree.links returns array of objects representing links from parent 
   // to child for each node
   var link = vis.selectAll("path.link")
-      .data(tree.links(nodes), function(d) { return d.target.id; });
+      .data(tree.links(nodes), function(d) { return d.target.id; })
+
 
   // Enter any new links at the parent's previous position.
   link.enter().insert("svg:path", "g")
       .attr("class", "link")
+      .style("stroke", "black")
       .attr("d", function(d) {
         var o = {x: source.x0, y: source.y0};
+        // sets where nodes arrives from
         return diagonal({source: o, target: o});
       })
     .transition()
