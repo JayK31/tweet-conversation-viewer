@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     oauth_consumer_key = ENV["TWITTER_CONSUMER_KEY"]
     oauth_nonce = SecureRandom.base64(32).gsub(/[^0-9a-z ]/i, '')
     # needs Post/Get, base url, parameters
-    oauth_signature = 
+    # oauth_signature = 
   end
 
   def application_only_requests
