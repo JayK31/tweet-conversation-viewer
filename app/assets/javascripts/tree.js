@@ -1,7 +1,7 @@
 // m = margins, set height and width by subtracting from m(left, top, right, bottom)
 // not sure what i is here
 var m = [20, 120, 20, 120],
-    w = 5000 - m[1] - m[3],
+    w = 1280 - m[1] - m[3],
     h = 5000 - m[0] - m[2],
     i = 0,
     // add padding to offset increasing circle r 
@@ -110,7 +110,7 @@ function update(source) {
       .on("mouseover", function(d) {
         $(this).attr("title", d.name + " says: " + d.text).tooltipsy({
           // have to hardcode this offset for now
-          offset: [-65, 30]
+          offset: [-6, 30]
         })
 
   nodeEnter.append("svg:text")
