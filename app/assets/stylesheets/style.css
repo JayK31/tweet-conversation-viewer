@@ -21,6 +21,12 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-family: "Helvetica Neue", Helvetica;
+  background-color: death metal black;
+}
+
+#body {
+  padding-top: 50px;
 }
 
 .tooltipsy {
@@ -34,25 +40,41 @@ body {
   pointer-events: none;
 }
 
-#top-bar {
-  background-color: black;
+#menubar {
+  background-color: rgba(0, 0, 0, .8);
   height: 50px;
+  width: 100%;
+  display: table;
+  position: fixed;
+  margin-top: -20px;
 }
 
 #logo {
-  display: inline;
   width: 300px;
   float: left;
   color: white;
-  font-size: 42px;
+  font-size: 38px;
+  padding-top: 5px;
+  padding-left: 5px;
+
 }
 
 #signin {
-  display: inline;
-  width: 400px;
+  height: 50px;
+  width: auto;
   float: right;
   color: white;
   text-align: right;
-  padding-right: 5px;
-  padding-top: 15px;
+  display: inline-table;
+}
+
+#signin-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
 }

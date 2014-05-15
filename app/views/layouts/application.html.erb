@@ -9,14 +9,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="top-bar">
+  <div id="menubar">
     <div id="logo">
       TWTTR CNVRS
     </div>
     <div id="signin">
       <% if user_signed_in? %>
-        Signed in as <%= current_user.name %>
-        <%= link_to "(Sign out)", destroy_user_session_path,:method => :delete %>
+        <div id="signin-text">
+          @<%= @screen_name %>
+          <%= link_to "(Sign out)", destroy_user_session_path,:method => :delete %>
+        </div>
+        <div id="user-image" style="background-image: url(<%= @image %>); height: 50px; width: 50px; float: right">
+        </div>
       <% else %>
         <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
       <% end %>
