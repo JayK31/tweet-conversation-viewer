@@ -26,18 +26,10 @@ var diagonal = d3.svg.diagonal()
 var vis = d3.select("#body").append("svg:svg")
         .attr("width", w + m[1] + m[3])
         .attr("height", h + m[0] + m[2])
-    // .append("pattern")
-    //     .attr("height", 40)
-    //     .attr("width", 40)
-    // .append("image")
-    //     .attr("height", 40)
-    //     .attr("width", 40)
-    //     .attr("xlink:href", "http://www.e-pint.com/epint.jpg")
+    .append("svg:g")
+        .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
 
-
-  .append("svg:g")
-      // translating svg (120, 20) 
-    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+ 
 
 d3.json("conversation2.json", function(json) {
   root = json;
@@ -84,7 +76,9 @@ function update(source) {
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.x0 + "," + source.y0 + ")"; })
-      .on("click", function(d) { toggle(d); update(d); });
+      .on("click", function(d) { toggle(d); update(d); })
+  
+
       // changing the source from y,x to x,y appends new nodes from top to bottom instead of left to right
       // setting parent node
       // .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
@@ -108,6 +102,7 @@ function update(source) {
       .attr("class", "framed")
       .attr("preserveAspectRatio", "xMinYMin")
       .on("mouseover", function(d) {
+        $("div[id^='tooltipsy']").remove()
         $(this).attr("title", d.name + " says: " + d.text).tooltipsy({
           // have to hardcode this offset for now
           offset: [-65, 30]
@@ -156,7 +151,13 @@ function update(source) {
   // Enter any new links at the parent's previous position.
   link.enter().insert("svg:path", "g")
       .attr("class", "link")
-      .style("stroke", "black")
+      .style("stroke", function(d) {
+        if (d.children == !null) {
+          return "blue"
+        } else {
+          return "black"  
+        }
+      })
       .attr("d", function(d) {
         var o = {x: source.x0, y: source.y0};
         // sets where nodes arrives from
@@ -197,3 +198,4 @@ function toggle(d) {
     d._children = null;
   }
 }
+
