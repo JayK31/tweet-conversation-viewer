@@ -24,8 +24,17 @@ var diagonal = d3.svg.diagonal()
     .projection(function(d) {return [d.x, d.y]; });
 
 var vis = d3.select("#body").append("svg:svg")
-    .attr("width", w + m[1] + m[3])
-    .attr("height", h + m[0] + m[2])
+        .attr("width", w + m[1] + m[3])
+        .attr("height", h + m[0] + m[2])
+    // .append("pattern")
+    //     .attr("height", 40)
+    //     .attr("width", 40)
+    // .append("image")
+    //     .attr("height", 40)
+    //     .attr("width", 40)
+    //     .attr("xlink:href", "http://www.e-pint.com/epint.jpg")
+
+
   .append("svg:g")
       // translating svg (120, 20) 
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
@@ -74,39 +83,75 @@ function update(source) {
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + source.x0 + "," + (source.y0+15) + ")"; })
+      .attr("transform", function(d) { return "translate(" + source.x0 + "," + source.y0 + ")"; })
       .on("click", function(d) { toggle(d); update(d); });
       // changing the source from y,x to x,y appends new nodes from top to bottom instead of left to right
       // setting parent node
       // .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
 
-  nodeEnter.append("svg:circle")
-      .attr("r", 1e-6)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+
+    
+// sweet sweet code
+  nodeEnter.append("rect")
+      .attr("class", "rect")
+      .attr("stroke", "black")
+      .attr("fill", "none")
+      .attr("height", 75)
+      .attr("width", 75)
+  nodeEnter.append("image")
+      .attr("xlink:href", function(d) {
+        return d.image
+      })
+      .attr("width", 75)
+      .attr("height", 75)
+      .attr("class", "framed")
+      .attr("preserveAspectRatio", "xMinYMin")
+
+
+
+        //     .attr("class", "cir")
+  //     .attr("r", 1e-6)
+
+  // nodeEnter.append("image")
+  //         .attr("width", 74)
+  //         .attr("height", 75)
+  //         .attr("xlink:href", function(d) {
+  //           return d.image
+  //         })
+  //         .attr("cx", function(d) {
+  //           return d.x
+  //         })
+  //         .attr("cy", function(d) {
+  //           return d.y
+  //         })
+      //return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("svg:text")
-      // changed x position of to -45,45 to move text out of circles
-      .attr("x", function(d) { return d.children || d._children ? -45 : 45; })
-      .attr("dy", ".35em")
+      .attr("x", function(d) { return d.children || d._children ? -5 : -75; })
+      .attr("y", function(d) { return d.children || d._children ? 35 : 35; })
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6)
       .on("mouseover", function(d) {
         alert(d.name)
-        
+        alert(d.text)
       })
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
       .duration(duration)
       // add padding so first node isnt off the svg
-      .attr("transform", function(d) { return "translate(" + d.x + "," + (d.y+padding) + ")"; });  
+      .attr("transform", function(d) { return "translate(" + (d.x - 37.5) + "," + d.y + ")"; });  
       // above, switching the translate for node placement on svg
       // .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
-  nodeUpdate.select("circle")
-      .attr("r", 40)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+  // nodeUpdate.select("circle")
+  //         .attr("r", 40)
+  
+      
+
+
 
   nodeUpdate.select("text")
       .style("fill-opacity", 1);
