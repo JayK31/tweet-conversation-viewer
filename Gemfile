@@ -33,6 +33,9 @@ gem 'pry-rails'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'rspec-rails'
+gem 'capybara'
+gem 'simplecov', '~> 0.7.1', :require => false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
