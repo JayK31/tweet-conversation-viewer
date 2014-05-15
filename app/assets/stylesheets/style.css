@@ -26,7 +26,7 @@ body {
 }
 
 #body {
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .tooltipsy {
@@ -46,11 +46,10 @@ body {
   width: 100%;
   display: table;
   position: fixed;
-  margin-top: -20px;
 }
 
 #logo {
-  width: 300px;
+  width: auto;
   float: left;
   color: white;
   font-size: 38px;
@@ -68,7 +67,7 @@ body {
   display: inline-table;
 }
 
-#signin-text {
+.signin-text {
   display: table-cell;
   vertical-align: middle;
   padding-right: 10px;

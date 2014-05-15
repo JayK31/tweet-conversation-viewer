@@ -11,23 +11,23 @@
 <body>
   <div id="menubar">
     <div id="logo">
-      TWTTR CNVRS
+      TWTTR FRGMNTS
     </div>
     <div id="signin">
       <% if user_signed_in? %>
-        <div id="signin-text">
+        <div class="signin-text">
           @<%= @screen_name %>
           <%= link_to "(Sign out)", destroy_user_session_path,:method => :delete %>
         </div>
         <div id="user-image" style="background-image: url(<%= @image %>); height: 50px; width: 50px; float: right">
         </div>
       <% else %>
-        <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
+        <div class="signin-text">
+          <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
+        </div>
       <% end %>
     </div>  
   </div>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
 <%= yield %>
 
