@@ -159,7 +159,7 @@ function update(source) {
   // Transition exiting nodes to the parent's new position.
   var nodeExit = node.exit().transition()
       .duration(duration)
-      .attr("transform", function(d) { return "translate(" + source.x + "," + source.y + ")"; })
+      .attr("transform", function(d) { return "translate(" + (source.x-padding) + "," + source.y + ")"; })
       .remove();
       // now switching x,y for exiting nodes
       // .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
