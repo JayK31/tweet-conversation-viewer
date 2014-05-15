@@ -4,6 +4,8 @@
   <title>TweetConversationViewer</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <script type="text/javascript" src="assets/tooltipsy.min.js">
+</script>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -19,6 +21,7 @@
   <p class="alert"><%= alert %></p>
 
 <%= yield %>
+
 
 </body>
 </html>

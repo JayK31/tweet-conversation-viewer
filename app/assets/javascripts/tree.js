@@ -108,36 +108,29 @@ function update(source) {
       .attr("class", "framed")
       .attr("preserveAspectRatio", "xMinYMin")
 
-
-
-        //     .attr("class", "cir")
-  //     .attr("r", 1e-6)
-
-  // nodeEnter.append("image")
-  //         .attr("width", 74)
-  //         .attr("height", 75)
-  //         .attr("xlink:href", function(d) {
-  //           return d.image
-  //         })
-  //         .attr("cx", function(d) {
-  //           return d.x
-  //         })
-  //         .attr("cy", function(d) {
-  //           return d.y
-  //         })
-      //return d._children ? "lightsteelblue" : "#fff"; });
-
   nodeEnter.append("svg:text")
+      .attr("class", "tweet")
       .attr("x", function(d) { return d.children || d._children ? -5 : -75; })
       .attr("y", function(d) { return d.children || d._children ? 35 : 35; })
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6)
       .on("mouseover", function(d) {
-        alert(d.name)
-        alert(d.text)
+        $(this).attr("title", d.name + ": " + d.text).tooltipsy()
       })
 
+
+ //  $('svg image').tipsy({ 
+  //   gravity: 'w', 
+  //   html: true, 
+  //   title: function() {
+  //     var d = this.__data__, c = colors(d.i);
+  //     return 'Hi there! My color is <span style="color:' + c + '">' + c + '</span>'; 
+  //   }
+  // });
+
+
+  
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
       .duration(duration)
@@ -145,13 +138,6 @@ function update(source) {
       .attr("transform", function(d) { return "translate(" + (d.x - 37.5) + "," + d.y + ")"; });  
       // above, switching the translate for node placement on svg
       // .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
-
-  // nodeUpdate.select("circle")
-  //         .attr("r", 40)
-  
-      
-
-
 
   nodeUpdate.select("text")
       .style("fill-opacity", 1);
