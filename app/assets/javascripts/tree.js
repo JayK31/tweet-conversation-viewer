@@ -110,7 +110,7 @@ function update(source) {
       .on("mouseover", function(d) {
         $(this).attr("title", d.name + " says: " + d.text).tooltipsy({
           // have to hardcode this offset for now
-          offset: [-6, 30]
+          offset: [-65, 30]
         })
 
   nodeEnter.append("svg:text")
