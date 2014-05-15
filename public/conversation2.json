@@ -1,0 +1,341 @@
+{
+  "id": 465884884980879360,
+  "name": "Glenn Jones",
+  "screen_name": "SecludedGlenn",
+  "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+  "text": "Correcting an earlier tweet: Only 8 Pod decks in the Top 17, glad it's not still clearly the best deck in the format",
+  "children": [
+    {
+      "id": 465885305216966656,
+      "name": "Patrick Sullivan",
+      "screen_name": "BasicMountain",
+      "image": "http://pbs.twimg.com/profile_images/3529718236/be82b32f5e4f6f374c6fa249ae303971_normal.jpeg",
+      "text": "@SecludedGlenn The arbitrary nature of a lot of the bannings is even more dubious when Pod seems to get a free pass for reasons unknown.",
+      "children": [
+        {
+          "id": 465885618921152513,
+          "name": "Glenn Jones",
+          "text": "@BasicMountain I legitimately think the \"reason\" is it's overpowered in a way that is fun and interesting",
+          "screen_name": "SecludedGlenn",
+          "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+          "children": [
+            {
+              "id": 465885853597065216,
+              "name": "Patrick Sullivan",
+              "screen_name": "BasicMountain",
+              "image": "http://pbs.twimg.com/profile_images/3529718236/be82b32f5e4f6f374c6fa249ae303971_normal.jpeg",
+              "text": "@SecludedGlenn I think it stops being both things after 18 months or so.",
+              "children": [
+                {
+                  "id": 465886586534514688,
+                  "name": "Glenn Jones",
+                  "screen_name": "SecludedGlenn",
+                  "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+                  "text": "@BasicMountain Agreed",
+                  "children": [
+                    {
+                      "id": 465887415744593920,
+                      "name": "Patrick Sullivan",
+                      "screen_name": "BasicMountain",
+                      "image": "http://pbs.twimg.com/profile_images/3529718236/be82b32f5e4f6f374c6fa249ae303971_normal.jpeg",
+                      "text": "@SecludedGlenn My actual best guess is that it's protected because it shows off the depth of the card pool, makes the format feel large.",
+                      "children": [
+                        {
+                          "id": 465888069556908032,
+                          "name": "Evan Erwin",
+                          "text": "@BasicMountain @SecludedGlenn Something has to be the best, but only if it lives in the right win percentages. Does Pod win over 60%?",
+                          "screen_name": "misterorange",
+                          "image": "http://pbs.twimg.com/profile_images/1669877195/Screen_Shot_2011-12-02_at_11.53.50_AM_normal.png",
+                          "children": [
+                            {
+                              "id": 465888444066324480,
+                              "name": "Patrick Sullivan",
+                              "screen_name": "BasicMountain",
+                              "image": "http://pbs.twimg.com/profile_images/3529718236/be82b32f5e4f6f374c6fa249ae303971_normal.jpeg",
+                              "text": "@misterorange @SecludedGlenn \"Something has to be the best\" runs counter to previous ban philosophy for cards/decks far less egregious.",
+                              "children": [
+                                {
+                                  "id": 465888772870397952,
+                                  "name": "Evan Erwin",
+                                  "screen_name": "misterorange",
+                                  "image": "http://pbs.twimg.com/profile_images/1669877195/Screen_Shot_2011-12-02_at_11.53.50_AM_normal.png",
+                                  "text": "@BasicMountain @SecludedGlenn But as you noted (I feel correctly) it is not just raw power level that is being considered for those.",
+                                  "children": [
+                                    {
+                                      "id": 465889293336989696,
+                                      "name": "Mike Wurzer",
+                                      "screen_name": "wWurZz",
+                                      "image": "http://pbs.twimg.com/profile_images/3561201459/3aba73452bf276974e553884369deee0_normal.jpeg",
+                                      "text": "@misterorange @BasicMountain @SecludedGlenn Card selection is banned for all the other decks. Why does pod still have 2 legal tutors?",
+                                      "children": [
+                                        {
+                                          "id": 465889663979618304,
+                                          "name": "Tom Strong",
+                                          "screen_name": "MtgTom24",
+                                          "image": "http://pbs.twimg.com/profile_images/3273286454/010c9349d5b037edaad9def8795d65b0_normal.jpeg",
+                                          "text": "@wWurZz @misterorange @BasicMountain @SecludedGlenn Tron has even more... Why is T3 Karn with variance reduction okay, relatively?",
+                                          "children": [
+                                            {
+                                              "id": 465889799778217984,
+                                              "name": "Glenn Jones",
+                                              "screen_name": "SecludedGlenn",
+                                              "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+                                              "text": "@MtgTom24 @wWurZz @misterorange @BasicMountain Because Tron's not good?",
+                                              "children": [
+                                                {
+                                                  "id": 465890496624467968,
+                                                  "name": "Tom Strong",
+                                                  "screen_name": "MtgTom24",
+                                                  "image": "http://pbs.twimg.com/profile_images/3273286454/010c9349d5b037edaad9def8795d65b0_normal.jpeg",
+                                                  "text": "@SecludedGlenn @wWurZz @misterorange @BasicMountain It hasn't bit WotC in the ass?"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "id": 465889841168019456,
+                                              "name": "Mike Wurzer",
+                                              "text": "@MtgTom24 @misterorange @BasicMountain @SecludedGlenn I'm guessing because they aren't blue.",
+                                              "screen_name": "wWurZz",
+                                              "image": "http://pbs.twimg.com/profile_images/3561201459/3aba73452bf276974e553884369deee0_normal.jpeg"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": 465889299574312960,
+                                      "name": "Patric Sullivan",
+                                      "screen_name": "BasicMountain",
+                                      "image": "http://pbs.twimg.com/profile_images/3529718236/be82b32f5e4f6f374c6fa249ae303971_normal.jpeg",
+                                      "text": "@misterorange @SecludedGlenn And if it's play pattern, I think Pod runs afoul there as well. Maybe we disagree here though.",
+                                      "children": [
+                                        {
+                                          "id": 465889930062082048,
+                                          "name": "Squirrely",
+                                          "text": "@BasicMountain @misterorange @SecludedGlenn It's also an incredibly fun card to watch on camera and provides some \"deep\" decks (like LSV's)",
+                                          "screen_name": "travishall456",
+                                          "image": "http://pbs.twimg.com/profile_images/3622275733/316cc4ead039d139a48ce607c35af977_normal.jpeg"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": 465890762131922944,
+                                      "name": "Kyle",
+                                      "text": "@misterorange @BasicMountain @SecludedGlenn its a good midrange deck w/inevitability. It stifles the format more than any recent bannings",
+                                      "screen_name": "Kyle2Plowshares",
+                                      "image": "http://pbs.twimg.com/profile_images/1525702198/227725_10100189785944337_9633289_48289294_5702317_n_normal.jpg"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": 465889633587314688,
+                              "name": "Glenn Jones",
+                              "screen_name": "SecludedGlenn",
+                              "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+                              "text": "@misterorange @BasicMountain Pretty arbitrary line. Its consistency in Top 16s over the last two years is downright startling",
+                              "children": [
+                                {
+                                  "id": 465889752424939521,
+                                  "name": "Evan Erwin",
+                                  "screen_name": "misterorange",
+                                  "image": "http://pbs.twimg.com/profile_images/1669877195/Screen_Shot_2011-12-02_at_11.53.50_AM_normal.png",
+                                  "text": "@SecludedGlenn @BasicMountain But is that because it's the \"known best deck\" ie pros will always play the best, or because win% is so high?",
+                                  "children": [
+                                    {
+                                      "id": 465889967390990337,
+                                      "name": "Glenn Jones",
+                                      "screen_name": "SecludedGlenn",
+                                      "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+                                      "text": "@misterorange @BasicMountain The latter informs the first"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": 465889915352645632,
+                                  "name": "Evan Erwin",
+                                  "screen_name": "misterorange",
+                                  "image": "http://pbs.twimg.com/profile_images/1669877195/Screen_Shot_2011-12-02_at_11.53.50_AM_normal.png",
+                                  "text": "@SecludedGlenn @BasicMountain Delver was the best deck in Standard, but still never topped 60% wins. That is a very important line to wotc",
+                                  "children": [
+                                    {
+                                      "id": 465890199814160385,
+                                      "name": "Glenn Jones",
+                                      "screen_name": "SecludedGlenn",
+                                      "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+                                      "text": "@misterorange @BasicMountain Tsk tsk. As coverage people, we all know that constant success is more damning than actual data :)"
+                                    },
+                                    {
+                                      "id": 465890458917679105,
+                                      "name": "Patrick Sullivan",
+                                      "screen_name": "BasicMountain",
+                                      "image": "http://pbs.twimg.com/profile_images/3529718236/be82b32f5e4f6f374c6fa249ae303971_normal.jpeg",
+                                      "text": "@misterorange @SecludedGlenn Not sure how wotc would mine that data, controlling for player quality. Even if they could, arbitrary nonsense.",
+                                      "children": [
+                                        {
+                                          "id": 465898992233349120,
+                                          "name": "Evan Erwin",
+                                          "screen_name": "misterorange",
+                                          "image": "http://pbs.twimg.com/profile_images/1669877195/Screen_Shot_2011-12-02_at_11.53.50_AM_normal.png",
+                                          "text": "@BasicMountain @SecludedGlenn Arbitrary I guess, but you have to draw the line somewhere? The last deck with over 60% was Caw-Blade.",
+                                          "children": [
+                                            {
+                                              "id": 465904470065704961,
+                                              "text": "@misterorange @BasicMountain @SecludedGlenn In what context? Over X time? Data sourced from which tournaments? All relevant Qs, IMO.",
+                                              "name": "Tom Strong",
+                                              "screen_name": "MtgTom24",
+                                              "image": "http://pbs.twimg.com/profile_images/3273286454/010c9349d5b037edaad9def8795d65b0_normal.jpeg",
+                                              "children": [
+                                                {
+                                                  "id": 465905758492971008,
+                                                  "name": "Evan Erwin", 
+                                                  "screen_name": "misterorange",
+                                                  "image": "http://pbs.twimg.com/profile_images/1669877195/Screen_Shot_2011-12-02_at_11.53.50_AM_normal.png",
+                                                  "text": "@MtgTom24 @BasicMountain @SecludedGlenn Unclear, as I don't know their exact methods. Easiest data source is MTGO for sure.",
+                                                  "children": [
+                                                    {
+                                                      "id": 465906097157857281,
+                                                      "name": "Tom Strong",
+                                                      "text": "@misterorange @BasicMountain @SecludedGlenn We only know what they release, and we don't know enough to say anything definitively.",
+                                                      "screen_name": "MtgTom24",
+                                                      "image": "http://pbs.twimg.com/profile_images/3273286454/010c9349d5b037edaad9def8795d65b0_normal.jpeg",
+                                                      "children": [
+                                                        {
+                                                          "id": 465912606252077056,
+                                                          "name": "Evan Erwin",
+                                                          "screen_name": "misterorange",
+                                                          "image": "http://pbs.twimg.com/profile_images/1669877195/Screen_Shot_2011-12-02_at_11.53.50_AM_normal.png",
+                                                          "text": "@MtgTom24 @BasicMountain @SecludedGlenn I'm guessing they weight the Modern Pro Tour more heavily than any other data point."
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "id": 465899121522790401,
+                                      "text": "@misterorange @SecludedGlenn @BasicMountain my guess is that wotc are afraid of killing 2 archetypes completely",
+                                      "name": "Janus S. Andersen",
+                                      "screen_name": "YouCanCallMe_J",
+                                      "image": "http://pbs.twimg.com/profile_images/464537176068587520/eDnxT9Qb_normal.jpeg",
+                                      "children": [
+                                        {
+                                          "id": 465899518396227584,
+                                          "text": "@misterorange @SecludedGlenn @BasicMountain just like the case of Twin. These decks can't effectively be neutered like Jund was",
+                                          "name": "Janus S. Andersen",
+                                          "screen_name": "YouCanCallMe_J",
+                                          "image": "http://pbs.twimg.com/profile_images/464537176068587520/eDnxT9Qb_normal.jpeg"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 465887986094444544,
+                      "name": "Patrick Sullivan",
+                      "screen_name": "BasicMountain",
+                      "image": "http://pbs.twimg.com/profile_images/3529718236/be82b32f5e4f6f374c6fa249ae303971_normal.jpeg",
+                      "text": "@SecludedGlenn But I've always felt \"Birthing Pod the Thought Experiment\" is cool, \"Birthing Pod the Card in Play\" is not.",
+                      "children": [
+                        {
+                          "id": 465889475093336064,
+                          "text": "@BasicMountain @SecludedGlenn I've been on board with banning this thing forever. I also just bought 4 yesterday.",
+                          "name": "Chris Pikula",
+                          "screen_name": "meddlingmage",
+                          "image": "http://pbs.twimg.com/profile_images/1144442034/profile_normal.jpg",
+                          "children": [
+                            {
+                              "id": 465889884419268608,
+                              "name": "Glenn Jones",
+                              "screen_name": "SecludedGlenn",
+                              "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+                              "text": "@meddlingmage @BasicMountain I've been holding out and waiting on cooler heads for some time :/"
+                            }, 
+                            {
+                              "id": 466008844246593536,
+                              "name": "James Hammes",
+                              "text": "@meddlingmage @BasicMountain @SecludedGlenn see, this is why I just main deck cage in my tezz control deck.",
+                              "screen_name": "mtgjbone",
+                              "image": "http://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png"
+                            }
+                          ]
+                        },
+                        {
+                          "id": 465891302874546176,
+                          "text": "@BasicMountain @SecludedGlenn nah, it's great.",
+                          "name": "Luis Scott-Vargas",
+                          "screen_name": "lsv",
+                          "image": "http://pbs.twimg.com/profile_images/378800000341119394/5e8e22cacc3ed4fdef48de5f613b7112_normal.png",
+                          "children": [
+                            {
+                              "id": 465891474547433472,
+                              "text": "@BasicMountain @SecludedGlenn (not actually defending it).",
+                              "name": "Luis Scott-Vargas",
+                              "screen_name": "lsv",
+                              "image": "http://pbs.twimg.com/profile_images/378800000341119394/5e8e22cacc3ed4fdef48de5f613b7112_normal.png"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 465885955732549632,
+              "name": "Jan van der Vegt",
+              "screen_name": "DasDzy",
+              "image": "http://pbs.twimg.com/profile_images/2906659159/23ac2268a0f56cb3cb34113166cd3da8_normal.jpeg",
+              "text": "@SecludedGlenn @BasicMountain the deck also bubbles to the top because it's very rewarding for good play and a lot of good players play it",
+              "children": [
+                {
+                  "id": 465886849240530945,
+                  "name": "Glenn Jones",
+                  "text": "@DasDzy @BasicMountain The fact that more and more good players are picking it up is a testament to its general strength",
+                  "screen_name": "SecludedGlenn",
+                  "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg"
+                }
+              ]
+            },
+            {
+              "id": 465907806311563264,
+              "name": "Nathan Holt", 
+              "text": "@SecludedGlenn @BasicMountain Doesn't it require a high enough skill level to pilot that it doesn't dominate in the rank and file?",
+              "screen_name": "WalkThePlanes",
+              "image":"http://pbs.twimg.com/profile_images/3586586212/35bc0d4cd34dcce57a4f36a751caae4a_normal.png",
+              "children": [
+                {
+                  "id": 465910163614887936,
+                  "name": "Glenn Jones",
+                  "screen_name": "SecludedGlenn",
+                  "image": "http://pbs.twimg.com/profile_images/1563923944/CroppedMatchedUp_normal.jpg",
+                  "text": "@WalkThePlanes @BasicMountain The fact that bad players can't pilot it to high finishes is probably a detriment to its total success"
+                },
+                {
+                  "id": 465934911086407680,
+                  "name": "Drew",
+                  "text": "@WalkThePlanes @SecludedGlenn @BasicMountain I don't think that's true. They ban storm cards and that deck is also very hard",
+                  "screen_name": "DrewDacool",
+                  "image": "http://abs.twimg.com/sticky/default_profile_images/default_profile_5_normal.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
