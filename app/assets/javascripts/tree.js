@@ -2,7 +2,7 @@
 // not sure what i is here
 var m = [20, 120, 20, 120],
     w = 1280 - m[1] - m[3],
-    h = 1280 - m[0] - m[2],
+    h = 1400 - m[0] - m[2],
     i = 0,
     // add padding to offset increasing circle r 
     padding = 40,
