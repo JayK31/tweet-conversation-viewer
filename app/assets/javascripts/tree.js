@@ -39,7 +39,7 @@ var vis = d3.select("#body").append("svg:svg")
       // translating svg (120, 20) 
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.json("data.json", function(json) {
+d3.json("conversation2.json", function(json) {
   root = json;
   // change x0,y0 values
   // not sure what this is doing, has no effect on orientation
