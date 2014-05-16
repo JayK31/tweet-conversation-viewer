@@ -1,19 +1,13 @@
 class WelcomeController < ApplicationController
 
   def index
-    puts "current_user"
-    puts current_user
-    puts current_user.uid
+
     if current_user
       response = HTTParty.get("https://api.twitter.com/1.1/users/show.json", :query => { 'user_id' => current_user.uid }, :headers => { 'Authorization' => "Bearer #{ENV['TWITTER_BEARER_TOKEN']}" })
 
       @image = response["profile_image_url"]
       @screen_name = response["screen_name"]
 
-      puts "image"
-      puts @image
-      puts "screen_name"
-      puts @screen_name
     end
   end
 
