@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require d3.min  
 //= require tooltipsy.min
+//= require scripts
