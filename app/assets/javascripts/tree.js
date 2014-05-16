@@ -89,7 +89,14 @@ function update(source) {
 // sweet sweet code
   nodeEnter.append("rect")
       .attr("class", "rect")
-      .attr("stroke", "black")
+      .attr("stroke", function(d) {
+        if (d._children == null) {
+          return "orange"
+        } else {
+          return "rgb(29,202,255)"
+        }
+      })
+      .attr("stroke-width", 10)
       .attr("fill", "none")
       .attr("height", 75)
       .attr("width", 75)
