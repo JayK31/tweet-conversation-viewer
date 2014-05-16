@@ -96,7 +96,7 @@ function update(source) {
           return "rgb(29,202,255)"
         }
       })
-      .attr("stroke-width", 10)
+      .attr("stroke-width", 5)
       .attr("fill", "none")
       .attr("height", 75)
       .attr("width", 75)
