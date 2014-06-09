@@ -91,3 +91,26 @@ a {
   padding-top: 60px;
   padding-left: 20px;
 }
+
+#keys1 {
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  padding-right: 20px;
+  float: right;
+}
+
+#keys2 {
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  padding-right: 20px;
+}
+
+#about {
+  position: fixed;
+  top: 300px;
+  left: 35%;
+  width: 30%;
+  font-size: 20px;
+}

@@ -12,4 +12,8 @@ $(document).ready(function(){
     $("#body").empty();
     $("<script>").attr("type", "text/javascript").attr("src", "assets/tree3.js").appendTo($("body"));
   })
+
+  $("#body").click(function(event){
+    $("#about").remove();
+  })
 });
